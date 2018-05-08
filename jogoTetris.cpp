@@ -76,7 +76,8 @@ int main() {
  			Tetris jogoTeste = jogoComPecaCaindo; 			
  			if(jogoTeste.adicionaForma(posicaoPecaAtual,alturaPecaAtual,idPecaAtual, possiveisRotacoes[(rotacaoPecaAtual+1)%4]))
  				rotacaoPecaAtual = (rotacaoPecaAtual+1)%4;
- 		} 
+ 		}
+
 
 		if(jogoComPecaCaindo.adicionaForma(posicaoPecaAtual,alturaPecaAtual-1,idPecaAtual, possiveisRotacoes[rotacaoPecaAtual])) {
 			alturaPecaAtual--;
@@ -95,7 +96,6 @@ int main() {
 
 		exibeJogo(jogoComPecaCaindo,larguraJogo,alturaMaximaJogo);
 		
-
 		
  		//usleep(200000);
 
